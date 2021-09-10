@@ -9,7 +9,6 @@ class potencia extends hacerCalculos {
     parent::__construct($numero,$op);
 
     }
-
     
     public function __toString()
     {

@@ -11,7 +11,6 @@ class RaizCuadrada extends hacerCalculos  {
 
     }
 
-
     public function __toString()
     {
         return "La Raiz Cuadrada de {$this->numero} es = {$this->calcularOperaciones ()}";
