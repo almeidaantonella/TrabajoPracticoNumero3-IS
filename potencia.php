@@ -15,6 +15,6 @@ class potencia  {
     
     public function __toString()
     {
-        return "{$this->calculaPotencia ()}";
+        return "La cuadrado de {$this->numero} es = return {$this->calculaPotencia ()}";
     }
 }

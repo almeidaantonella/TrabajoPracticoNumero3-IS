@@ -16,6 +16,6 @@ class RaizCuadrada  {
     
     public function __toString()
     {
-        return "{$this->calcularRaiz ()}";
+        return "La Raiz Cuadrada de {$this->numero} es = {$this->calcularRaiz ()}";
     }
 }
