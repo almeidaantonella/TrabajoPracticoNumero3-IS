@@ -5,7 +5,7 @@ require_once 'raizCuadrada.php';
 require_once 'factorial.php';
 
 
-$a1=$_GET['var1'];
+$var1=$_GET['var1'];
 
 
 $p = new Potencia($var1,1);

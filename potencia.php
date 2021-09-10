@@ -10,8 +10,4 @@ class potencia extends hacerCalculos {
 
     }
     
-    public function __toString()
-    {
-        return "El cuadrado de {$this->numero} es = return {$this->calcularOperaciones ()}";
-    }
 }
