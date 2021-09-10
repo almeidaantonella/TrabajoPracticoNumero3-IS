@@ -1,21 +1,19 @@
 <?php
 
+require_once 'calcularCuentas.php';
 
-class RaizCuadrada  {
-    public $numero;
+class RaizCuadrada extends hacerCalculos  {
 
-    public function __construct($numero)
+
+    public function __construct($numero,$op)
  {
-    $this->numero = $numero;
+    parent::__construct($numero,$op);
 
     }
 
-    public function calcularRaiz (){
-        return sqrt($this->numero);
-    }
-    
+
     public function __toString()
     {
-        return "La Raiz Cuadrada de {$this->numero} es = {$this->calcularRaiz ()}";
+        return "La Raiz Cuadrada de {$this->numero} es = {$this->calcularOperaciones ()}";
     }
 }

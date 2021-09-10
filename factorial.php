@@ -1,26 +1,16 @@
 <?php
+require_once 'calcularCuentas.php';
 
-class factorial  {
-    public $numero;
+class factorial extends hacerCalculos  {
 
-    public function __construct($numero)
+    public function __construct($numero, $op)
  {
-    $this->numero = $numero;
+    parent::__construct($numero,$op);
 
     }
 
-    public function calculaFactorial (){ 
-        $factorial = 1; 
-            for ($i = 1; $i <= $this->numero; $i++){ 
-              $factorial = $factorial * $i; 
-            } 
-        return $factorial; 
-         
-         
-    }
-    
     public function __toString()
     {
-        return "El Factorial de {$this->numero} es = {$this->calculaFactorial ()}";
+        return "El Factorial de {$this->numero} es = {$this->calcularOperaciones ()}";
     }
 }

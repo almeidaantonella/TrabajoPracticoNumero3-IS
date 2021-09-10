@@ -5,12 +5,12 @@ require_once 'raizCuadrada.php';
 require_once 'factorial.php';
 
 
-$a1=$_GET['a1'];
+$a1=$_GET['var1'];
 
 
-$p = new Potencia($a1);
-$r = new RaizCuadrada($a1);
-$f = new Factorial($a1);
+$p = new Potencia($var1,1);
+$r = new RaizCuadrada($var1,2);
+$f = new Factorial($var1,3);
 
 ?>
 <!DOCTYPE html>

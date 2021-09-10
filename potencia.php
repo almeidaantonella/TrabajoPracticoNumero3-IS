@@ -1,20 +1,18 @@
 <?php
+require_once 'calcularCuentas.php';
 
-class potencia  {
-    public $numero;
+class potencia extends hacerCalculos {
+  
 
-    public function __construct($numero)
- {
-    $this->numero = $numero;
+    public function __construct($numero,$op){
+
+    parent::__construct($numero,$op);
 
     }
 
-    public function calculaPotencia (){
-        return $this->numero * $this->numero;
-    }
     
     public function __toString()
     {
-        return "La cuadrado de {$this->numero} es = return {$this->calculaPotencia ()}";
+        return "El cuadrado de {$this->numero} es = return {$this->calcularOperaciones ()}";
     }
 }
