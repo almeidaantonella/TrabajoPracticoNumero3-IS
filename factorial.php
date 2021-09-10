@@ -9,8 +9,4 @@ class factorial extends hacerCalculos  {
 
     }
 
-    public function __toString()
-    {
-        return "El Factorial de {$this->numero} es = {$this->calcularOperaciones ()}";
-    }
 }
